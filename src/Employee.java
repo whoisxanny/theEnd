@@ -1,11 +1,11 @@
 public class Employee {
-    String surname;
-    String name;
-    String patronymic;
-    int department;
-    int salary;
-    int id;
-    static int idCounter = 0;
+    private String surname;
+    private String name;
+    private String patronymic;
+    private int department;
+    private int salary;
+    private int id;
+    private static int idCounter = 0;
 
 
     public Employee(String surname,String name,String patronymic,int department, int salary) {
@@ -37,6 +37,10 @@ public class Employee {
         return salary;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public void setSurname(String surname) {
         this.surname = surname;
     }
@@ -56,6 +60,8 @@ public class Employee {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+
 
     @Override
     public String toString() {
